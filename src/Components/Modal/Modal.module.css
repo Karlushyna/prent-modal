@@ -1,15 +1,4 @@
-body.active-modal {
-    overflow-y: hidden;
-}
-
-.btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
-}
-
-.modal, .overlay {
+  .modal, .overlay  {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -19,177 +8,132 @@ body.active-modal {
     position: fixed;
 }
 
-.overlay {
+  .overlay {
     background: rgba(39, 39, 39, 0.6);
 }
 
-.modal {
+  .modal {
     width: 100%;
     height: 100%;
     padding: 16px 16px 60px 16px;
+
 @media screen and (min-width: 768px){
     padding: 24px 24px 60px 24px;
 }
-    
 }
-.modalContent{
+  
+  .content {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* padding: 16px 16px 60px 16px; */
+
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+   
+    background-color: #fff;
     border: none;
-    /* flex-wrap: wrap;
-    
-    /* text-align: center; */
-    
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #ffffff;
-    /* padding: 44px 20px; */
     border-radius: 20px;
-    border-color: #ffffff;
     width: 280px;
     height: 287px;
-    /* height: 786px; */
 
 @media screen and (min-width: 768px){
+    border-radius: 40px;
     width: 608px;
     height: 354px;
-    /* padding: 24px 24px 60px 24px; */
-
-    /* height: 540px; */
-    border-radius: 40px;
-    }
+  }
 }
 
-.closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    border: none;
-    background-color: transparent;
-}
-
-.closeIcon {
-    width: 24px;
-    height: 24px;
-    color: #54ADFF;
-}
-.closeIcon:hover,
-.closeIcon:focus {
-    color: black;
-}
-
-.title {
-    /* margin-left: 12px;
-    margin-right: 70px; */
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
-    text-align: center;
+  .title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-align: center;
 
 @media screen and (min-width: 768px) {
-        /* margin-left: 24px;
-        margin-right: 42px; */
-        margin-bottom: 20px;
-    }
-
-}
-
-
-.text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.37;
-    text-align: center;
-
-@media screen and (min-width: 768px){
-    font-weight: 500;
-    font-size: 24px;
-    
-}
-    
-    
-}
-
-.icon {
-    color: inherit;
-    margin-left: 8px;
-    width: 24px;
-    height: 24px;
+      margin-bottom: 20px;
   }
-
-
-
-
-
-p {
-    margin: 0;
-    padding: 0;
-} 
-
-h2 {
-    margin: 0;
-    padding: 0;
 }
 
 .buttonWrap {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
-align-items: center; 
-  /* margin-top: 20px; */
-  /* margin-left: 12px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
-
+  
   @media screen and (min-width: 768px) {
-    /* margin-left: 8px; */
   }
 }
 
 .modalBtn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    padding: 8px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 20px;
 
-    width: 129px;
-    height: 40px;
+  width: 129px;
+  height: 40px;
 
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.37;
-    letter-spacing: 0.04em;
-   
-    background-color: #FEF9F9;
-    border: 2px solid #54ADFF;
-    color: #54ADFF;
-    border-radius: 40px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+ 
+  background-color: #FEF9F9;
+  border: 2px solid #54ADFF;
+  color: #54ADFF;
+  border-radius: 40px;
 
-    
+  
 
 }
 
 .modalBtn:hover,
 .modalBtn:focus {
-    background-color: #54ADFF;
-    color: #FEF9F9;
-    border: 1px solid #54ADFF;
+  background-color: #54ADFF;
+  color: #FEF9F9;
+  border: 1px solid #54ADFF;
 }
 
 .btnAgree{
-    margin-left: 5px;
+  margin-left: 5px;
+} 
+.icon {
+  color: inherit;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
 } 
 
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  border: none;
+  background-color: transparent;
+}
 
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  color: #54ADFF;
+}
+.closeIcon:hover,
+.closeIcon:focus {
+  color: black;
+}
+  
+p {
+  margin: 0;
+}
 
+  

@@ -1,12 +1,12 @@
 import "./App.css";
-import Modal from './Components/Modal/Modal'
+import ParentComponent from "Components/Modal/ParentComponent";
 
 function App() {
 
 
   return (
     <>
-      <Modal />
+      <ParentComponent />
     </>
   );
 }
